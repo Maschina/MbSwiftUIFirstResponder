@@ -13,11 +13,4 @@ extension TextField {
             .background(MbFRHackView<V, NSTextField>(id: id, firstResponder: firstResponder, resignableUserOperations: resignableUserOperations, didBackViewLoaded: didBackViewLoaded))
     }
 }
-
-extension TextEditor {
-    public func firstResponder<V: Hashable>(id: V, firstResponder: Binding<V?>, resignableUserOperations: MbFirstResponder.TextEditor.ResignableUserOperations = .all, didBackViewLoaded: ((NSTextView) -> Void)? = nil) -> some View {
-        self
-            .background(MbFRHackView<V, NSTextView>(id: id, firstResponder: firstResponder, resignableUserOperations: resignableUserOperations, didBackViewLoaded: didBackViewLoaded))
-    }
-}
 #endif
