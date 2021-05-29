@@ -26,7 +26,7 @@ let package = Package(
             name: "SwiftUIFirstResponder",
             dependencies: []),
         .testTarget(
-            name: "SwiftUIFirstResponder",
+            name: "SwiftUIFirstResponderTests",
             dependencies: ["SwiftUIFirstResponder"]),
     ]
 )
